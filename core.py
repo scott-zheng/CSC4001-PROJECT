@@ -934,6 +934,8 @@ class FaceCollectWidget(QWidget):
 
 
 if __name__ == '__main__':
+    if not os.path.isdir('./User_info/tmp/'):
+        os.mkdir('./User_info/tmp')
     app = QApplication(sys.argv)
     window = System()
     window.show()
